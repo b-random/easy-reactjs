@@ -10,6 +10,24 @@
 <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
 <script type="text/jsx">
 /*Add your React code here*/
+  var App = React.createClass({
+    render: function(){
+      return (<div>Hello World</div>);
+    }
+  });
+  
+  var Profile = React.createClass({
+    render: function() {
+      return (
+        <div>
+          <h3>My Name</h3>
+          <img src='http://lorempixel.com/400/200' />
+        </div>    
+        );
+    }
+  })
+
+ReactDOM.render(<App />, document.getElementById('content'));
 
 
 </script>
